@@ -3,7 +3,7 @@ name: Deploy to vercel
 on:
     push:
         branches:
-            - master
+            - main
             - feature/*
     pull_request_target:
 jobs:
