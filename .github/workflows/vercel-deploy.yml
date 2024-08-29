@@ -3,7 +3,7 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - main
+      - master
       - feature/*
   pull_request_target:
 
@@ -19,9 +19,9 @@ jobs:
         run: ls -la
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
